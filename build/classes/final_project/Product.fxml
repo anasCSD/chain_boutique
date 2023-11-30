@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.ProductController">
+   <children>
+      <TableView fx:id="productTableView" layoutX="8.0" layoutY="123.0" prefHeight="200.0" prefWidth="696.0">
+        <columns>
+          <TableColumn fx:id="productIdColumn" prefWidth="214.0" text="Product Id" />
+          <TableColumn fx:id="productNameColumn" prefWidth="209.0" text="Product Name" />
+            <TableColumn fx:id="productPriceColumn" prefWidth="272.0" text="Product Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="471.0" layoutY="350.0" mnemonicParsing="false" onAction="#addCartOnClick" prefHeight="31.0" prefWidth="105.0" text="Add to Cart" />
+      <Button layoutX="39.0" layoutY="350.0" mnemonicParsing="false" onAction="#showCartItemsOnClick" text="Show CartItems" />
+      <ComboBox fx:id="filteringCombo" layoutX="48.0" layoutY="51.0" prefWidth="150.0" promptText="Filter" />
+      <Text layoutX="258.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product List" underline="true" wrappingWidth="104.98828125" />
+      <Button layoutX="258.0" layoutY="350.0" mnemonicParsing="false" onAction="#addToWishListOnClick" text="Add to WishList" />
+   </children>
+</AnchorPane>

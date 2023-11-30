@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.SignUpController">
+   <children>
+      <Label layoutX="44.0" layoutY="39.0" text="Id?" />
+      <Label layoutX="30.0" layoutY="82.0" text="Name?" />
+      <Label layoutX="24.0" layoutY="127.0" text="Contact?" />
+      <Label layoutX="23.0" layoutY="174.0" text="Address :" />
+      <TextField fx:id="idTextField" layoutX="88.0" layoutY="34.0" />
+      <TextField fx:id="userNameTextField" layoutX="88.0" layoutY="77.0" />
+      <TextField fx:id="userContactTextField" layoutX="88.0" layoutY="122.0" />
+      <TextField fx:id="addressTextField" layoutX="88.0" layoutY="169.0" />
+      <Button layoutX="503.0" layoutY="257.0" mnemonicParsing="false" onAction="#signUpSubOnClick" text="Submit" />
+      <PasswordField fx:id="createPassField" layoutX="430.0" layoutY="93.0" promptText="Enter a password" />
+      <PasswordField fx:id="confirmPassField" layoutX="443.0" layoutY="148.0" promptText="Enter again Password" />
+      <ComboBox fx:id="userTypeCombo" layoutX="430.0" layoutY="35.0" prefHeight="31.0" prefWidth="168.0" promptText="Select User Type" />
+      <Label layoutX="285.0" layoutY="98.0" text="Create A password ;" />
+      <Label layoutX="335.0" layoutY="40.0" text="User Type :" />
+      <Label layoutX="308.0" layoutY="153.0" text="Confirm Password :" />
+      <Button layoutX="64.0" layoutY="300.0" mnemonicParsing="false" onAction="#backHomePageOnClick" text="Back to Home Page" />
+      <Label layoutX="27.0" layoutY="217.0" text="DoB: " />
+      <DatePicker fx:id="dobDatePicker" layoutX="84.0" layoutY="212.0" />
+      <Text layoutX="261.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Information" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_project.PurchaseSceneController">
+   <children>
+      <Button layoutX="216.0" layoutY="314.0" mnemonicParsing="false" onAction="#confirmPurchaseOnClick" prefHeight="59.0" prefWidth="161.0" text="Confirm Purchase" />
+      <TextArea fx:id="checkOutTextArea" layoutX="14.0" layoutY="48.0" prefHeight="200.0" prefWidth="578.0" />
+      <Text layoutX="22.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Out : " />
+   </children>
+</AnchorPane>
